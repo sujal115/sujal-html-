@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Gallery</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f3f5;
+        }
+        .gallery-wrapper {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .gallery-card {
+            background-color: #e6ebef; 
+            border: 3px solid #dee2e6; 
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+        }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border-color: #0d6efd; 
+        }
+        .gallery-img {
+            height: 5%;
+            width: 60%;
+            object-fit: cover;
+            border-bottom: 2px solid #f6f8f9;
+        }
+        .gallery-caption {
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="py-5">
+    <div class="container" style="max-width: 1000px;">
+        <div class="d-flex justify-content-between align-items-center mb-4 px-2">
+            <div>
+                <h1 class="h3 text-dark mb-1">Visual Exhibition</h1>
+                <p class="text-muted small mb-0">A 6-frame grid detailed with customized styling metrics.</p>
+            </div>
+            <a href="portfolio.html" class="btn btn-sm btn-outline-secondary px-3">← Portfolio Home</a>
+        </div>
+        <div class="gallery-wrapper">
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-card">
+                        <img src="./architecture.jpg" alt="Architecture" class="gallery-img">
+                        <div class="p-3 text-center">
+                            <span class="text-white-50 gallery-caption uppercase">01 // MINIMAL DESIGN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-card">
+                        <img src="./hiking.jpg" alt="Nature" class="gallery-img">
+                        <div class="p-3 text-center">
+                            <span class="text-white-50 gallery-caption uppercase">02 // WILDERNESS RUN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-card">
+                        <img src="./city light.jpg" alt="Urban" class="gallery-img">
+                        <div class="p-3 text-center">
+                            <span class="text-white-50 gallery-caption uppercase">03 // CITY PERSPECTIVE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-card">
+                        <img src="./ai.jpg" alt="Technology" class="gallery-img">
+                        <div class="p-3 text-center">
+                            <span class="text-white-50 gallery-caption uppercase">04 // MATRIX NODES</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-card">
+                        <img src="./city night.jpg" alt="Studio Workspace" class="gallery-img">
+                        <div class="p-3 text-center">
+                            <span class="text-white-50 gallery-caption uppercase">05 // WORKSPACE LOGIC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-card">
+                        <img src="./beach.jpg" alt="Ocean Horizon" class="gallery-img">
+                        <div class="p-3 text-center">
+                            <span class="text-white-50 gallery-caption uppercase">06 // DEEP HORIZON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
